@@ -68,11 +68,11 @@ After running the script, the output will look like this:
 
 ```csv
 Model,Price,Storage,Camera,Looks,Score,Rank
-M1,250,16,12,5,0.4459,5
-M2,200,16,8,3,0.3700,6
-M3,300,32,16,4,0.6299,2
-M4,275,32,8,4,0.4936,3
-M5,225,16,16,2,0.4758,4
+M1,250,16,12,5,0.4459,4
+M2,200,16,8,3,0.3700,5
+M3,300,32,16,4,0.6299,1
+M4,275,32,8,4,0.4936,2
+M5,225,16,16,2,0.4758,3
 ```
 
 The **Score** is a measure of how close each alternative is to the ideal solution, and the **Rank** shows the order of preference, with 1 being the best choice.
