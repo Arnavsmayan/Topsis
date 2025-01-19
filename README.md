@@ -49,16 +49,15 @@ This command will process the data, calculate the scores, and save the results i
 
 ## Input File Structure
 
-The CSV file should look something like this:
+The CSV file should look like this:
 
-```csv
-Model,Price,Storage,Camera,Looks
-M1,250,16,12,5
-M2,200,16,8,3
-M3,300,32,16,4
-M4,275,32,8,4
-M5,225,16,16,2
-```
+| Model | Price | Storage | Camera | Looks |
+|-------|-------|---------|--------|-------|
+| M1    | 250   | 16      | 12     | 5     |
+| M2    | 200   | 16      | 8      | 3     |
+| M3    | 300   | 32      | 16     | 4     |
+| M4    | 275   | 32      | 8      | 4     |
+| M5    | 225   | 16      | 16     | 2     |
 
 Here, each row represents a different alternative (e.g., smartphone model) and each column represents a decision-making criterion.
 
@@ -66,14 +65,13 @@ Here, each row represents a different alternative (e.g., smartphone model) and e
 
 After running the script, the output will look like this:
 
-```csv
-Model,Price,Storage,Camera,Looks,Score,Rank
-M1,250,16,12,5,0.4459,4
-M2,200,16,8,3,0.3700,5
-M3,300,32,16,4,0.6299,1
-M4,275,32,8,4,0.4936,2
-M5,225,16,16,2,0.4758,3
-```
+| Model | Price | Storage | Camera | Looks | Score        | Rank |
+|-------|-------|---------|--------|-------|--------------|------|
+| M1    | 250   | 16      | 12     | 5     | 0.4459       | 4    |
+| M2    | 200   | 16      | 8      | 3     | 0.3700       | 5    |
+| M3    | 300   | 32      | 16     | 4     | 0.6299       | 1    |
+| M4    | 275   | 32      | 8      | 4     | 0.4936       | 2    |
+| M5    | 225   | 16      | 16     | 2     | 0.4758       | 3    |
 
 The **Score** is a measure of how close each alternative is to the ideal solution, and the **Rank** shows the order of preference, with 1 being the best choice.
 
