@@ -27,10 +27,9 @@ def topsis(input_file, weights, impacts, output_file):
         distance_b = np.sqrt(((weight_params - ideal_b)**2).sum(axis=1))
         distance_w = np.sqrt(((weight_params - ideal_w)**2).sum(axis=1))
         scores = distance_w / (distance_b + distance_w)
-        ranks = len(scores) - scores.argsort()
         output_df = df.copy()
         output_df['Score'] = scores
-        output_df['Rank'] = ranks
+        output_df['Ranks'] = output_df['Score'].rank(method='min', ascending=False).astype(int)
         output_df.to_csv(output_file, index=False)
     except Exception as e:
         print(e)
