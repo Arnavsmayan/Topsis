@@ -42,7 +42,7 @@ Let’s say we have a CSV file named `input_data.csv` and we want to weigh the f
 Run:
 
 ```bash
-python topsis.py input_data.csv 0.2,0.3,0.3,0.2 +,+,+,- result.csv
+python topsis.py input_data.csv "0.2,0.3,0.3,0.2" "+,+,+,-" result.csv
 ```
 
 This command will process the data, calculate the scores, and save the results in a file called `result.csv`.
